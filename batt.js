@@ -137,6 +137,16 @@ r.on('response', function (response) {
           top50Tatal.set_content('前50个占总量百分比: ' + per.toFixed(2) + '%');
           body.appendChild(top50Tatal);
 
+
+          let github = new HTMLParser.HTMLElement('a', {id:'github'}, 'href="https://github.com/zhfnjust/batt"') ;
+
+          github.set_content('https://github.com/zhfnjust/batt');
+          body.appendChild(github);
+
+
+
+
+
           let docString = doc.toString();
           fs.writeFileSync('./out.html', docString)
 
