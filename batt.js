@@ -154,10 +154,12 @@ r.on('response', function (response) {
             if (err) return console.log('Ooops!', err) // some  error
             console.log(res); // { filename: '/app/businesscard.pdf' }
             console.log('报表生成成功...'); 
-            db.put('last_time', time, function (err) {
-              if (err) return console.log('Ooops!', err) // some kind of I/O error
-        
-            })
+            if( record ) {
+              db.put('last_time', time, function (err) {
+                if (err) return console.log('Ooops!', err) // some kind of I/O error
+          
+              })
+            }
           });
         })
     }
