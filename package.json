@@ -1,0 +1,17 @@
+{
+  "name": "batt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "batt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hh",
+  "license": "MIT",
+  "dependencies": {
+    "html-pdf": "^2.2.0",
+    "level": "^4.0.0",
+    "node-html-parser": "^1.1.9",
+    "request": "^2.88.0"
+  }
+}
